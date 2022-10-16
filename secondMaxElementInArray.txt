@@ -1,7 +1,7 @@
 /*
 nput: 
 N = 6
-Arr[] = {12, 35, 1, 10, 34, 1}
+arr[] = {12, 35, 1, 10, 34, 1}
 Output: 34
 */
 class Solution {
