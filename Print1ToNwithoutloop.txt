@@ -1,0 +1,24 @@
+/*
+Input:
+N = 10
+Output: 1 2 3 4 5 6 7 8 9 10
+*/
+class Solution
+{
+    
+  public void printNos(int N)
+    {
+        //Your code here
+        int i=1;
+        mymtd(i,N);
+    }
+    private static void mymtd(int i,int N)
+    {
+        if(i<=N)
+        {
+            System.out.print(i+" ");
+            i++;
+            mymtd(i,N);
+        }
+    }
+}
