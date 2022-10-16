@@ -1,0 +1,26 @@
+/*
+Input: S = "ABCddE"
+Output: "abcdde"
+Explanation: A, B, C and E are converted to
+a, b, c and E thus all uppercase characters 
+of the string converted to lowercase letter.
+*/
+class Solution {
+    static String toLower(String S) {
+        // code here
+        String s1="";
+        for(int i=0;i<S.length();i++)
+        {
+            char ch=S.charAt(i);
+            if(ch>='A'&&ch<='Z')
+            {
+                s1=s1+(char)(ch+32);
+            }
+            else
+            {
+                s1=s1+ch;
+            }
+        }
+        return s1;
+    }
+}
