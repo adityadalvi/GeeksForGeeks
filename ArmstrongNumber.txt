@@ -1,0 +1,33 @@
+/*
+Input: N = 153
+Output: "Yes"
+Explanation: 153 is an Armstrong number
+since 13 + 53 + 33 = 153.
+Hence answer is "Yes".
+*/
+class Solution {
+    static String armstrongNumber(int n){
+        // code here
+        int num=n;
+        int temp=n;
+        int cnt=0;
+        while(num>0)
+        {
+            cnt++;
+            num/=10;
+        }
+        int sum=0;
+        while(n>0)
+        {
+            int rem=n%10;
+            sum=sum+(int)Math.pow(rem,cnt);
+            n/=10;
+        }
+       if(temp==sum)
+       {
+           return "Yes";
+       }
+       else
+        return "No";
+    }
+}
